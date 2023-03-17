@@ -9,7 +9,7 @@ const {
 } = require('../../controllers/thoughtsController');
 
 // /api/thoughts
-router.route('/thoughts').get(getThoughts).post(createThoughts);
+router.route('/').get(getThoughts).post(createThoughts);
 
 // /api/thoughts/:thoughtsId
 router.route('/:thoughtsId').get(getSingleThoughts).delete(deleteThoughts);
